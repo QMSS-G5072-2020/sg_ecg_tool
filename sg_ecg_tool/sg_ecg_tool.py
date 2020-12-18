@@ -152,26 +152,13 @@ x2 = j2['result']['records']
 
 def explore_study(subject, csv=False):
     """
-    If you do not know what you would like to study, this is a good start. You can key in a subject that you
-    have some form of interest in, and get a full list of options.
+    If you do not know what you would like to study, this is a good start. You can key in a subject that you have some form of interest in, and get a full list of options.
 
     Parameters
     ----------
-    subject: List of Dicts. One of the preset list comprehensions that have been pre-defined. This is a compulsory
-    argument to enter.
+    subject: List of Dicts. One of the preset list comprehensions that have been pre-defined. This is a compulsory argument to enter.
 
-    - sg.Business
-    - sg.Engineering
-    - sg.Computing
-    - sg.Education
-    - sg.Law
-    - sg.Humanities_SocialSci
-    - sg.Healthcare
-    - sg.Science
-    - sg.Design_Art
-
-    csv: bool. If set to true, a csv file with this information will be saved to your working directory. It is False
-    by default.
+    csv: bool. If set to true, a csv file with this information will be saved to your working directory. It is False by default.
 
     Returns
     -------
@@ -195,37 +182,18 @@ def explore_study(subject, csv=False):
 
 def get_employed(subject, university_shortname, csv=False):
     """
-    If you already have some sense of what you might like to do, and where you might like to do it,
-    this function can be especially helpful. This can be used in conjunction with see_employ().
+    If you already have some sense of what you might like to do, and where you might like to do it, this function can be especially helpful. This can be used in conjunction with see_employ().
+
     You can key in a subject and university that you have some form of interest in, and get a full list of options.
 
     Parameters
     ----------
-    subject: List of Dicts. One of the preset list comprehensions that have been pre-defined. This is a compulsory
-    argument to enter.
+    subject: List of Dicts. One of the preset list comprehensions that have been pre-defined. This is a compulsory argument to enter.
 
-    - sg.Business
-    - sg.Engineering
-    - sg.Computing
-    - sg.Education
-    - sg.Law
-    - sg.Humanities_SocialSci
-    - sg.Healthcare
-    - sg.Science
-    - sg.Design_Art
+    university_shortname: str. However, you can simply key in the variables that have been created as part of this package (e.g., sg.NUS, sg.NTU) for convenience. This is a compulsory argument to enter.
 
-    university_shortname: str. However, you can simply key in the variables that have been created as part of this
-    package (e.g., sg.NUS, sg.NTU) for convenience. This is a compulsory argument to enter.
 
-    - sg.NTU = 'Nanyang Technological University'
-    - sg.NUS = 'National University of Singapore'
-    - sg.SUTD = 'Singapore University of Technology and Design'
-    - sg.SUSS = 'Singapore University of Social Sciences'
-    - sg.SIT = 'Singapore Institute of Technology'
-    - sg.SMU = 'Singapore Management University'
-
-    csv: bool. If set to true, a csv file with this information will be saved to your working directory. It is False
-    by default.
+    csv: bool. If set to true, a csv file with this information will be saved to your working directory. It is False by default.
 
     Returns
     -------
@@ -246,35 +214,14 @@ def get_employed(subject, university_shortname, csv=False):
 
 def see_employ(subject, university_shortname):
     """
-     If you already have some sense of what you might like to do, and where you might like to do it,
-     this function can be especially helpful. This can be used in conjunction with get_employed().
-     You can key in a subject and university that you have some form of interest in, and get a visualization of
-     overall employment rate, over time.
+     If you already have some sense of what you might like to do, and where you might like to do it, this function can be especially helpful. This can be used in conjunction with get_employed().
+     You can key in a subject and university that you have some form of interest in, and get a visualization of overall employment rate, over time.
 
      Parameters
      ----------
-     subject: List of Dicts. One of the preset list comprehensions that have been pre-defined. This is a compulsory
-     argument to enter.
+     subject: List of Dicts. One of the preset list comprehensions that have been pre-defined. This is a compulsory argument to enter.
 
-     - sg.Business
-     - sg.Engineering
-     - sg.Computing
-     - sg.Education
-     - sg.Law
-     - sg.Humanities_SocialSci
-     - sg.Healthcare
-     - sg.Science
-     - sg.Design_Art
-
-     university_shortname: str. However, you can simply key in the variables that have been created as part of this
-     package (e.g., sg.NUS, sg.NTU) for convenience. This is a compulsory argument to enter.
-
-     - sg.NTU = 'Nanyang Technological University'
-     - sg.NUS = 'National University of Singapore'
-     - sg.SUTD = 'Singapore University of Technology and Design'
-     - sg.SUSS = 'Singapore University of Social Sciences'
-     - sg.SIT = 'Singapore Institute of Technology'
-     - sg.SMU = 'Singapore Management University'
+     university_shortname: str. However, you can simply key in the variables that have been created as part of this package (e.g., sg.NUS, sg.NTU) for convenience. This is a compulsory argument to enter.
 
      Returns
      -------
@@ -293,43 +240,20 @@ def see_employ(subject, university_shortname):
 
 def get_paid(subject, university_shortname, csv=False):
     """
-    If you are particularly interested in how much you can expect to be paid, after graduating from your intended course,
-    this function can be especially helpful. This can be used in conjunction with see_paid().
-    You can key in a subject and university that you have some form of interest in, and get a full list of courses
-    and the salary statistics of their graduates.
+    If you are particularly interested in how much you can expect to be paid, after graduating from your intended course, this function can be especially helpful. This can be used in conjunction with see_paid().
+    You can key in a subject and university that you have some form of interest in, and get a full list of courses and the salary statistics of their graduates.
 
     Parameters
     ----------
-    subject: List of Dicts. One of the preset list comprehensions that have been pre-defined. This is a compulsory
-    argument to enter.
+    subject: List of Dicts. One of the preset list comprehensions that have been pre-defined. This is a compulsory argument to enter.
 
-    - sg.Business
-    - sg.Engineering
-    - sg.Computing
-    - sg.Education
-    - sg.Law
-    - sg.Humanities_SocialSci
-    - sg.Healthcare
-    - sg.Science
-    - sg.Design_Art
+    university_shortname: str. However, you can simply key in the variables that have been created as part of this package (e.g., sg.NUS, sg.NTU) for convenience. This is a compulsory argument to enter.
 
-    university_shortname: str. However, you can simply key in the variables that have been created as part of this
-    package (e.g., sg.NUS, sg.NTU) for convenience. This is a compulsory argument to enter.
-
-    - sg.NTU = 'Nanyang Technological University'
-    - sg.NUS = 'National University of Singapore'
-    - sg.SUTD = 'Singapore University of Technology and Design'
-    - sg.SUSS = 'Singapore University of Social Sciences'
-    - sg.SIT = 'Singapore Institute of Technology'
-    - sg.SMU = 'Singapore Management University'
-
-    csv: bool. If set to true, a csv file with this information will be saved to your working directory. It is False
-    by default.
+    csv: bool. If set to true, a csv file with this information will be saved to your working directory. It is False by default.
 
     Returns
     -------
-    A Pandas DataFrame, containing the queried information regarding the subject, school of study and the
-    anticipated salary rates.
+    A Pandas DataFrame, containing the queried information regarding the subject, school of study and the anticipated salary rates.
     If csv=True, a csv file will also be generated.
 
     Examples
@@ -346,35 +270,15 @@ def get_paid(subject, university_shortname, csv=False):
 
 def see_paid(subject, university_shortname):
     """
-        If you are particularly interested in how much you can expect to be paid, after graduating from your intended course,
-        this function can be especially helpful. This can be used in conjunction with get_paid().
-        You can key in a subject and university that you have some form of interest in, and get a visualization of
-        gross median salary of graduates from a particular type of course and university, over time.
+        If you are particularly interested in how much you can expect to be paid, after graduating from your intended course, this function can be especially helpful. This can be used in conjunction with get_paid().
+
+        You can key in a subject and university that you have some form of interest in, and get a visualization of gross median salary of graduates from a particular type of course and university, over time.
 
         Parameters
         ----------
-        subject: List of Dicts. One of the preset list comprehensions that have been pre-defined. This is a compulsory
-        argument to enter.
+        subject: List of Dicts. One of the preset list comprehensions that have been pre-defined. This is a compulsory argument to enter.
 
-        - sg.Business
-        - sg.Engineering
-        - sg.Computing
-        - sg.Education
-        - sg.Law
-        - sg.Humanities_SocialSci
-        - sg.Healthcare
-        - sg.Science
-        - sg.Design_Art
-
-        university_shortname: str. However, you can simply key in the variables that have been created as part of this
-        package (e.g., sg.NUS, sg.NTU) for convenience. This is a compulsory argument to enter.
-
-        - sg.NTU = 'Nanyang Technological University'
-        - sg.NUS = 'National University of Singapore'
-        - sg.SUTD = 'Singapore University of Technology and Design'
-        - sg.SUSS = 'Singapore University of Social Sciences'
-        - sg.SIT = 'Singapore Institute of Technology'
-        - sg.SMU = 'Singapore Management University'
+        university_shortname: str. However, you can simply key in the variables that have been created as part of this package (e.g., sg.NUS, sg.NTU) for convenience. This is a compulsory argument to enter.
 
         Returns
         -------
@@ -392,58 +296,19 @@ def see_paid(subject, university_shortname):
 
 def explore_opening(industry2, csv=False):
     """
-    If you are particularly interested in how many available job openings there are in a particular industry, this
-    function can provide you with that information. This can be used in conjunction with see_opening().
-    You can key in an industry that you have some form of interest in, and get a full list of job vacancy rates,
-    over quarters.
+    If you are particularly interested in how many available job openings there are in a particular industry, this function can provide you with that information. This can be used in conjunction with see_opening().
+    You can key in an industry that you have some form of interest in, and get a full list of job vacancy rates, over quarters.
 
     Parameters
     ----------
-    industry2: str. One of the preset strings, which signify a given industry. This is a compulsory
-    argument to enter.
+    industry2: str. One of the preset strings, which signify a given industry. This is a compulsory argument to enter.
 
-    - 'accommodation and food services',
-    - 'administrative and support services',
-    - 'business and real estate services',
-    - 'community, social and personal services',
-    - 'construction',
-    - 'electrical products',
-    - 'electronic products',
-    - 'electronic, computer and optical products',
-    - 'fabricated metal products',
-    - 'fabricated metal products, machinery and equipment',
-    - 'financial and insurance services',
-    - 'financial intermediation',
-    - 'financial services',
-    - 'food, beverages and tobacco',
-    - 'hotels and restaurants',
-    - 'information and communications',
-    - 'machinery and equipment',
-    - 'medical and precision instruments',
-    - 'other manufacturing industries',
-    - 'others',
-    - 'paper products and printing',
-    - 'paper products and publishing',
-    - 'paper,rubber,plastic products and printing',
-    - 'petroleum and chemical products',
-    - 'petroleum, chemical and pharmaceutical products',
-    - 'professional services',
-    - 'real estate and leasing services',
-    - 'real estate services',
-    - 'rubber and plastic products',
-    - 'textile and wearing apparel',
-    - 'transport and storage',
-    - 'transport equipment',
-    - 'transport, storage and communications',
-    - 'transportation and storage',
-    - 'wholesale and retail trade'
-
-    csv: bool. If set to true, a csv file with this information will be saved to your working directory. It is False
-    by default.
+    csv: bool. If set to true, a csv file with this information will be saved to your working directory. It is False by default.
 
     Returns
     -------
     A Pandas DataFrame, containing the queried information regarding job vacancies for a given industry.
+
     If csv=True, a csv file will also be generated.
 
     Examples
@@ -460,54 +325,12 @@ def explore_opening(industry2, csv=False):
 
 def see_opening(industry2):
     """
-       If you are particularly interested in how many available job openings there are in a particular industry, this
-       function can provide you with that information. This can be used in conjunction with explore_opening().
-       You can key in an industry that you have some form of interest in, and get visualization of job vacancy rates,
-       over 7 recent quarters.
+       If you are particularly interested in how many available job openings there are in a particular industry, this function can provide you with that information. This can be used in conjunction with explore_opening().
+       You can key in an industry that you have some form of interest in, and get visualization of job vacancy rates, over 7 recent quarters.
 
        Parameters
        ----------
-       industry2: str. One of the preset strings, which signify a given industry. This is a compulsory
-       argument to enter.
-
-       - 'accommodation and food services',
-       - 'administrative and support services',
-       - 'business and real estate services',
-       - 'community, social and personal services',
-       - 'construction',
-       - 'electrical products',
-       - 'electronic products',
-       - 'electronic, computer and optical products',
-       - 'fabricated metal products',
-       - 'fabricated metal products, machinery and equipment',
-       - 'financial and insurance services',
-       - 'financial intermediation',
-       - 'financial services',
-       - 'food, beverages and tobacco',
-       - 'hotels and restaurants',
-       - 'information and communications',
-       - 'machinery and equipment',
-       - 'medical and precision instruments',
-       - 'other manufacturing industries',
-       - 'others',
-       - 'paper products and printing',
-       - 'paper products and publishing',
-       - 'paper,rubber,plastic products and printing',
-       - 'petroleum and chemical products',
-       - 'petroleum, chemical and pharmaceutical products',
-       - 'professional services',
-       - 'real estate and leasing services',
-       - 'real estate services',
-       - 'rubber and plastic products',
-       - 'textile and wearing apparel',
-       - 'transport and storage',
-       - 'transport equipment',
-       - 'transport, storage and communications',
-       - 'transportation and storage',
-       - 'wholesale and retail trade'
-
-       csv: bool. If set to true, a csv file with this information will be saved to your working directory. It is False
-       by default.
+       industry2: str. One of the preset strings, which signify a given industry. This is a compulsory argument to enter.
 
        Returns
        -------
